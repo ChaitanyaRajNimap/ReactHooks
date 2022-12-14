@@ -1,6 +1,10 @@
 import "./App.css";
+import DataFetching from "./Components/DataFetching";
+// import IntervalClassCounter from "./Components/IntervalClassCounter";
+// import IntervalHookCounter from "./Components/IntervalHookCounter";
+// import MouseContainer from "./Components/MouseContainer";
 // import ClassUseEffectOnce from "./Components/ClassUseEffectOnce";
-import UseEffectOnce from "./Components/UseEffectOnce";
+// import UseEffectOnce from "./Components/UseEffectOnce";
 // import UseEffectAfterRender from "./Components/UseEffectAfterRender";
 // import ClassUseEffect from "./Components/ClassUseEffect";
 // import HookCounterWithArray from "./Components/HookCounterWithArray";
@@ -13,8 +17,12 @@ function App() {
   return (
     <div className="App">
       <h1>React Hooks</h1>
+      <DataFetching />
+      {/* <IntervalClassCounter /> */}
+      {/* <IntervalHookCounter /> */}
+      {/* <MouseContainer /> */}
       {/* <ClassUseEffectOnce /> */}
-      <UseEffectOnce />
+      {/* <UseEffectOnce /> */}
       {/* <UseEffectAfterRender /> */}
       {/* <ClassUseEffect /> */}
       {/* <HookCounterWithArray /> */}
