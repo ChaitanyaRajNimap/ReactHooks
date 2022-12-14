@@ -1,5 +1,7 @@
 import "./App.css";
-import DataFetching from "./Components/DataFetching";
+import React from "react";
+import ComponentC from "./Components/ComponentC";
+// import DataFetching from "./Components/DataFetching";
 // import IntervalClassCounter from "./Components/IntervalClassCounter";
 // import IntervalHookCounter from "./Components/IntervalHookCounter";
 // import MouseContainer from "./Components/MouseContainer";
@@ -13,11 +15,19 @@ import DataFetching from "./Components/DataFetching";
 // import HookCounter from "./Components/HookCounter";
 // import ClassCounter from "./Components/ClassCounter";
 
+export const UserContext = React.createContext();
+export const ChannelContext = React.createContext();
+
 function App() {
   return (
     <div className="App">
       <h1>React Hooks</h1>
-      <DataFetching />
+      <UserContext.Provider value={"Tony"}>
+        <ChannelContext.Provider value={"Stark"}>
+          <ComponentC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+      {/* <DataFetching /> */}
       {/* <IntervalClassCounter /> */}
       {/* <IntervalHookCounter /> */}
       {/* <MouseContainer /> */}
